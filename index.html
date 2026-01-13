@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday 🎂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scroll-progress"></div>
+    <div id="loading-screen">
+        <div class="loading-heart">😸</div>
+        <div class="loading-text">Prepared something for you...</div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
+
+    <div class="easter-egg-trigger" onclick="openGalaxy()" title="Click me! ⭐">⭐</div>
+
+    <nav>
+        <div class="logo">🐱 Birthday Wishes</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#story">Our Story</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#messages">Messages</a>
+            <button class="music-toggle ripple" onclick="toggleMusic()">🎵 Music</button>
+        </div>
+    </nav>
+
+    <audio id="bgMusic" loop>
+         <source src="images/about you.mp3" type="audio/mpeg"> 
+    </audio>
+
+    <div class="hero">
+        <div class="hero-content">
+            <div class="typing-container">
+                <span class="hero-title" id="typingText"></span>
+                <span class="cursor"></span>
+            </div>
+            <div class="hero-subtitle">For someone who is very special and means a lot to me</div>
+        </div>
+    </div>
+
+    <div id="about" class="about-section">
+        <div class="about-content">
+            <div class="profile-image-container">
+                <img src="images/img2.png" alt="Profile" class="profile-image">
+            </div>
+
+            <h1 class="about-title">Happy 25th Birthday! 🎉</h1>
+            
+            <div class="ph-accent"></div>
+            
+            <p class="about-age">Turning 25 | A Girl from the Philippines</p>
+
+            <p class="about-description">
+                To the most amazing girl I know —
+                the girl with the kindest heart, 
+                the brightest smile, and the biggest 
+                love of cats. You light up every room you enter. 
+                May this year be filled with adventure, 
+                laughter, and happy memories. 💝
+            </p>
+        </div>
+    </div>
+
+    <div class="countdown-section">
+        <h2 class="countdown-title">⏰ Countdown to Your Special Day</h2>
+        <div class="countdown-timer">
+            <div class="countdown-item">
+                <div class="countdown-number" id="days">00</div>
+                <div class="countdown-label">Days</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="hours">00</div>
+                <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="minutes">00</div>
+                <div class="countdown-label">Minutes</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="seconds">00</div>
+                <div class="countdown-label">Seconds</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="story" class="section story-section">
+        <h2 class="section-title">Our Story 💫</h2>
+        <div class="story-grid">
+            <div>
+                <p class="story-text">
+                    Even though a lot has changed between us, I still remember all the wonderful moments we shared.
+                    Your love for cats always makes me smile, and the way you laugh always makes me happy.
+                    Those memories will always hold a special place in my heart.
+                    <br><br>
+                    Today is your day, and I sincerely hope it's filled with all the happiness you deserve.
+                    You are an amazing person, and I'm grateful for the time we spent together.
+                </p>
+            </div>
+            <div class="cat-illustration">
+                <div class="cat-container">
+                    <div class="cat-head">
+                        <div class="cat-ear left"></div>
+                        <div class="cat-ear right"></div>
+                        <div class="cat-eye left"></div>
+                        <div class="cat-eye right"></div>
+                        <div class="cat-nose"></div>
+                    </div>
+                    <div class="cat-body">
+                        <div class="cat-paw left"></div>
+                        <div class="cat-paw right"></div>
+                        <div class="cat-tail"></div>
+                    </div>
+                    <div class="heart-balloon">💗</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fun-facts">
+            <div class="fact-card">
+                <div class="fact-icon">🎮</div>
+                <div class="fact-title">Gamer</div>
+                <div class="fact-desc">Very good at playing Roblox and FPS games especially COD</div>
+            </div>
+            <div class="fact-card">
+                <div class="fact-icon">🐱</div>
+                <div class="fact-title">Cat Lover</div>
+                <div class="fact-desc">Have a cat named Ninong</div>
+            </div>
+            <div class="fact-card">
+                <div class="fact-icon">😴</div>
+                <div class="fact-title">Likes to sleep</div>
+                <div class="fact-desc">Likes to fall asleep and sometimes falls asleep suddenly.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="numbers-section">
+    <h2 class="section-title">Our Story in Numbers 💫</h2>
+    <div class="numbers-grid">
+
+        <div class="number-card">
+            <div class="number-value" data-target="90">0</div>
+            <div class="number-label">Days Together</div>
+        </div>
+        
+        <div class="number-card">
+            <div class="number-value" data-target="76">0</div>
+            <div class="number-label">Photos Taken</div>
+        </div>
+
+        <div class="number-card">
+            <div class="number-value" data-target="1">0</div>
+            <div class="number-label">Amazing Person</div>
+        </div>
+        
+        <div class="number-card">
+            <div class="number-value infinity-number" data-target="999">0</div>
+            <div class="number-label">Memories Forever</div>
+        </div>
+    </div>
+</div>
+
+    <div id="gallery" class="section gallery-section">
+        <h2 class="section-title">Moments We Shared 📸</h2>
+        <div class="gallery-masonry">
+            <div class="gallery-card" onclick="openModal(this)">
+                <img src="images/img7.png" alt="Memory">
+                <div class="gallery-card-text">I was a little nervous when I was about to do this emote with u.</div>
+            </div>
+            <div class="gallery-card" onclick="openModal(this)">
+                <img src="images/img8.png" alt="Memory">
+                <div class="gallery-card-text">Remember when we always came to this place to rest? hihi</div>
+            </div>
+            <div class="gallery-card" onclick="openModal(this)">
+                <img src="images/img9.png" alt="Memory">
+                <div class="gallery-card-text">You are so great at playing on this mountain, you are really suited to sitting on that chair.</div>
+            </div>
+            <div class="gallery-card" onclick="openModal(this)">
+                <img src="images/img10.png" alt="Memory">
+                <div class="gallery-card-text">I always want to be close to you. huhu</div>
+            </div>
+            <div class="gallery-card" onclick="openModal(this)">
+                <img src="images/img11.png" alt="Memory">
+                <div class="gallery-card-text">You look like a little kid when I carry you like this. hihi</div>
+            </div>
+            <div class="gallery-card" onclick="openModal(this)">
+                <img src="images/img12.png" alt="Memory">
+                <div class="gallery-card-text">Remember when I carried u like a princess on this mountain? Too bad I didn't take a picture. T_T</div>
+            </div>
+            <div class="gallery-card" onclick="openModal(this)">
+                <img src="images/img13.png" alt="Memory">
+                <div class="gallery-card-text">Do I look like a tired person or like a lazy person? HAHAHA</div>
+            </div>
+            <div class="gallery-card" onclick="openModal(this)">
+                <img src="images/img14.png" alt="Memory">
+                <div class="gallery-card-text">Sorry for suddenly taking pictures :)</div>
+            </div>
+            <div class="gallery-card" onclick="openModal(this)">
+                <img src="images/img15.png" alt="Memory">
+                <div class="gallery-card-text">I feel comfortable when u hug me like this even though it's only in the game. Thank u</div>
+            </div>
+            <div class="gallery-card" onclick="openModal(this)">
+                <img src="images/img16.png" alt="Memory">
+                <div class="gallery-card-text">I suddenly took another picture. huhu</div>
+            </div>
+            <div class="gallery-card" onclick="openModal(this)">
+                <img src="images/img17.png" alt="Memory">
+                <div class="gallery-card-text">And again T_T</div>
+            </div>
+            <div class="gallery-card" onclick="openModal(this)">
+                <img src="images/img18.png" alt="Memory">
+                <div class="gallery-card-text">I don't know what to say about this picture. huhu</div>
+            </div>
+            <div class="gallery-card" onclick="openModal(this)">
+                <img src="images/img19.png" alt="Memory">
+                <div class="gallery-card-text">You look so cute wearing a small ava</div>
+            </div>
+            <div class="gallery-card" onclick="openModal(this)">
+                <img src="images/img20.png" alt="Memory">
+                <div class="gallery-card-text">Our first photo booth?</div>
+            </div>
+            <div class="gallery-card" onclick="openModal(this)">
+                <img src="images/img21.png" alt="Memory">
+                <div class="gallery-card-text">Sorry for including photos of this place, i didn't mean it that way. :(</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="messages" class="section messages-section">
+        <h2 class="section-title">From My Heart 💌</h2>
+        
+        <div class="letter-container">
+            <div class="letter-header">
+                <h2>To My Special Person</h2>
+                <p>A letter written from the heart</p>
+            </div>
+
+            <div class="letter-body">
+                <div class="message-section">
+                    <h3>The Good Times 💝</h3>
+                    <p>
+                        Hi, how are you? You’re doing okay, right?
+                        I just want to say that I will never forget our beautiful moments.
+                        The way you used to call my name — ah, that moment.
+                        The sound of your laughter when something was funny, I really loved it.
+                        And the way you always fell asleep suddenly — I thought it was really cute.
+                        I truly wanted to hug you when you fell asleep like that.
+                        Those moments are treasures that I will carry forever.
+                        <span class="message-highlight">Thank you for giving me memories I will cherish for a lifetime.</span>
+                    </p>
+                </div>
+
+                <div class="letter-divider"></div>
+
+                <div class="message-section">
+                    <h3>What I Wish I Could Say 💔</h3>
+                    <p>
+                        There are times when I wish everything had been different.
+                        I think about all my mistakes that disappointed you and wonder what if.
+                        But all of that is just regret that comes when everything is already gone,
+                        and no matter how many times I apologize, it will never erase all the pain I caused you.
+
+                        Even so, I will still apologize for all the pain you went through.
+                        I’m sorry that back then I couldn’t be a good partner for you.
+                        But I think you’ve already found someone who can give you everything I couldn’t,
+                        and I’m happy if he can make you happy — unlike me, who only caused you suffering.
+
+                        I hope you know that I never meant to hurt you the way you did when you were with me.
+                        I just wanted to learn how to be a good partner for the person I loved,
+                        but it seems I couldn’t become that person.
+
+                        I’ve learned that some people come into our lives not to stay,
+                        but to teach us what love, loss, and letting go truly mean.
+                        You taught me that, and I’m grateful — even though it hurts.
+
+                        Do you remember when I said you were my first love?
+                        You couldn’t easily believe words like that,
+                        but you were truly the first person with whom I ever felt a love story in my life.
+                        And I’m very grateful that you were that person.
+
+                        Thank you for being the best part of my life,
+                        and I’m sorry for ever being the worst part of yours.
+                        I will never regret this meeting, because it was the greatest happiness of my life
+                        to have once been someone you loved with all of who you were.
+                        I truly loved that.
+
+                        Being an important part of someone’s life makes me proud —
+                        especially when that person was you.
+
+                        You know, I really miss the moments when we were together:
+                        eating together, sleeping together, and doing everything we could together.
+                        Thank you for accompanying me while I was working.
+                        I never thought there would be someone who would always stay with me during moments like that.
+
+                        I also never thought I would have someone I could call “home,”
+                        because when I was tired, that person was always there for me.
+                        Hehe, thank you for that.
+
+                        We went through happy times and unhappy times,
+                        laughed and cried together — we went through all of that together.
+                        I really loved those moments, but I couldn’t keep them.
+
+                        I’m sorry for ever being a bad partner and not being enough for you.
+                        But even so, my love for you will always be there and it is real.
+                        And if he says, “I love you,”
+                        then he still doesn’t know that my love for you could surpass anything.
+
+                        Hey, sometimes I cry like a little child when I remember the way you called my name — that voice.
+                        And I don’t even know why I dream about you sending me messages.
+                        When I wake up and check my phone, I realize it was only a dream,
+                        and I feel like crying again.
+
+                        I truly feel like I’ve lost someone incredibly precious in my life —
+                        someone who made every day of mine more enjoyable.
+
+                        Sometimes I really want to message you just to ask how you are,
+                        but I feel like I’m no longer worthy of doing that because of everything I did to you.
+                        Even though I always want to talk and share stories with you,
+                        like asking, “Are you still upset about when my friend bothered you?”
+
+                        But then I realize that I’m no longer someone special to you.
+                        I’m no longer someone you need.
+                        Now, you don’t have to overthink anymore —
+                        whether I exist or not doesn’t matter to you,
+                        because I don’t mean anything anymore.
+
+                        Even if I were gone, no one would care.
+
+                        Even so, you will always be my favorite and special person in my life,
+                        because no one has ever been able to replace you since then.
+
+                        Please never give up or feel sad, okay?
+                        I’m always praying for the best for you from here.
+                        And I want to say that I miss you very much and I still love you deeply,
+                        but I will keep these feelings quietly to myself.
+                        I’m sorry for expressing my feelings here.
+                    </p>
+                </div>
+
+                <div class="letter-divider"></div>
+
+                <div class="message-section">
+                    <h3>Moving Forward 🌅</h3>
+                    <p>
+                        Today is your day, and I truly hope it’s everything you dreamed of.
+                        You deserve all the happiness in the world —
+                        someone who sees your worth, appreciates your uniqueness,
+                        and loves you the way you deserve to be loved.
+
+                        Don’t worry about people speaking badly about us;
+                        they’ll eventually realize that what they say isn’t true.
+                        Live your life as usual, okay?
+
+                        Even though we’re not together,
+                        a part of me will always support you.
+                        <span class="message-highlight">Mahal kita, and happy birthday.</span> 🎂✨
+                    </p>
+                </div>
+            </div>
+
+            <div class="letter-footer">
+                Forever grateful for you,<br>
+                Yue ♡
+</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Made with 💗 and a lot of memories<br>
+        For someone who will always be special<br>
+        Happy Birthday 🎉 | Mahal kita Elle
+    </div>
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="modal-close" onclick="closeModal()">×</span>
+            <img id="modalImage" src="" alt="Gallery Image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
